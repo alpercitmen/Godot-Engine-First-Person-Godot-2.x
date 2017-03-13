@@ -1,0 +1,183 @@
+<<<<<<< HEAD
+[gd_scene load_steps=14 format=1]
+
+[ext_resource path="res://FirstPerson.gd" type="Script" id=1]
+[ext_resource path="res://sprites/imlec.tex" type="Texture" id=2]
+[ext_resource path="res://silahlar_weapons/kromar_colt1.scn" type="PackedScene" id=3]
+[ext_resource path="res://ses_sound/dirt_cakil.smp" type="Sample" id=4]
+[ext_resource path="res://ses_sound/grass_cim.smp" type="Sample" id=5]
+[ext_resource path="res://ses_sound/metal.smp" type="Sample" id=6]
+[ext_resource path="res://ses_sound/run_dirt_kos_cakil.smp" type="Sample" id=7]
+[ext_resource path="res://ses_sound/run_grass_kos_cim.smp" type="Sample" id=8]
+[ext_resource path="res://ses_sound/run_metal_kos_metal.smp" type="Sample" id=9]
+[ext_resource path="res://ses_sound/run_wood_kos_tahta.smp" type="Sample" id=10]
+[ext_resource path="res://ses_sound/wood_tahta.smp" type="Sample" id=11]
+=======
+[gd_scene load_steps=12 format=1]
+
+[ext_resource path="res://FirstPerson.gd" type="Script" id=1]
+[ext_resource path="res://ses_sound/dirt_cakil.smp" type="Sample" id=2]
+[ext_resource path="res://ses_sound/grass_cim.smp" type="Sample" id=3]
+[ext_resource path="res://ses_sound/metal.smp" type="Sample" id=4]
+[ext_resource path="res://ses_sound/run_dirt_kos_cakil.smp" type="Sample" id=5]
+[ext_resource path="res://ses_sound/run_grass_kos_cim.smp" type="Sample" id=6]
+[ext_resource path="res://ses_sound/run_metal_kos_metal.smp" type="Sample" id=7]
+[ext_resource path="res://ses_sound/run_wood_kos_tahta.smp" type="Sample" id=8]
+[ext_resource path="res://ses_sound/wood_tahta.smp" type="Sample" id=9]
+>>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
+
+[sub_resource type="CapsuleShape" id=1]
+
+radius = 1.0
+height = 2.0
+
+[sub_resource type="SampleLibrary" id=2]
+
+<<<<<<< HEAD
+samples/dirt_cakil = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/grass_cim = { "db":-20.0, "pitch":1.0, "sample":ExtResource( 5 ) }
+samples/metal = { "db":0.0, "pitch":1.0, "sample":ExtResource( 6 ) }
+samples/run_dirt_kos_cakil = { "db":0.0, "pitch":1.0, "sample":ExtResource( 7 ) }
+samples/run_grass_kos_cim = { "db":0.0, "pitch":1.0, "sample":ExtResource( 8 ) }
+samples/run_metal_kos_metal = { "db":0.0, "pitch":1.0, "sample":ExtResource( 9 ) }
+samples/run_wood_kos_tahta = { "db":0.0, "pitch":1.0, "sample":ExtResource( 10 ) }
+samples/wood_tahta = { "db":0.0, "pitch":1.0, "sample":ExtResource( 11 ) }
+=======
+samples/dirt_cakil = { "db":0.0, "pitch":1.0, "sample":ExtResource( 2 ) }
+samples/grass_cim = { "db":0.0, "pitch":1.0, "sample":ExtResource( 3 ) }
+samples/metal = { "db":0.0, "pitch":1.0, "sample":ExtResource( 4 ) }
+samples/run_dirt_kos_cakil = { "db":0.0, "pitch":1.0, "sample":ExtResource( 5 ) }
+samples/run_grass_kos_cim = { "db":0.0, "pitch":1.0, "sample":ExtResource( 6 ) }
+samples/run_metal_kos_metal = { "db":0.0, "pitch":1.0, "sample":ExtResource( 7 ) }
+samples/run_wood_kos_tahta = { "db":0.0, "pitch":1.0, "sample":ExtResource( 8 ) }
+samples/wood_tahta = { "db":0.0, "pitch":1.0, "sample":ExtResource( 9 ) }
+>>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
+
+[node name="FirstPerson" type="RigidBody"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+input/ray_pickable = true
+input/capture_on_drag = false
+shape_count = 1
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 2
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = false
+<<<<<<< HEAD
+contacts_reported = 1
+=======
+contacts_reported = 2
+>>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
+contact_monitor = true
+sleeping = false
+can_sleep = true
+axis_lock = 0
+velocity/linear = Vector3( 0, 0, 0 )
+velocity/angular = Vector3( 0, 0, 0 )
+<<<<<<< HEAD
+damp_override/linear = 0.0
+damp_override/angular = 0.0
+=======
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+>>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
+script/script = ExtResource( 1 )
+ses_bicim = "Tahta"
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform/local = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Camera" type="Camera" parent="."]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -1 )
+projection = 0
+fov = 60.0
+near = 0.1
+far = 100.0
+keep_aspect = 1
+current = false
+visible_layers = 1048575
+environment = null
+h_offset = 0.0
+v_offset = 0.0
+
+<<<<<<< HEAD
+[node name="silah" type="Spatial" parent="Camera"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform/local = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.566022, -0.421589, -1.55847 )
+
+[node name="imlec" type="Sprite3D" parent="Camera/silah"]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+transform/local = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, -2.32668 )
+layers = 1
+geometry/visible = true
+geometry/material_override = null
+geometry/cast_shadow = 0
+geometry/receive_shadows = true
+geometry/range_begin = 0.0
+geometry/range_end = 0.0
+geometry/extra_cull_margin = 0.0
+geometry/billboard = false
+geometry/billboard_y = false
+geometry/depth_scale = false
+geometry/visible_in_all_rooms = false
+geometry/use_baked_light = false
+geometry/baked_light_tex_id = 0
+centered = true
+offset = Vector2( 0, 0 )
+flip_h = false
+flip_v = false
+modulate = Color( 1, 1, 1, 1 )
+opacity = 1.0
+pixel_size = 0.01
+axis = 2
+flags/transparent = true
+flags/shaded = false
+flags/alpha_cut = 0
+texture = ExtResource( 2 )
+vframes = 1
+hframes = 1
+frame = 0
+region = false
+region_rect = Rect2( 0, 0, 0, 0 )
+
+[node name="kromar_colt1" parent="Camera/silah" instance=ExtResource( 3 )]
+
+transform/local = Transform( -0.1, 0, -3.25841e-08, 0, 0.1, 0, 3.25841e-08, 0, -0.1, 0.341075, -0.838162, -0.241245 )
+
+=======
+>>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
+[node name="Sesler" type="SpatialSamplePlayer" parent="."]
+
+_import_transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+params/volume_db = 5.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 100.0
+params/attenuation/distance_exp = 1.0
+params/emission_cone/degrees = 180.0
+params/emission_cone/attenuation_db = -6.0
+<<<<<<< HEAD
+config/polyphony = 1
+=======
+config/polyphony = 3
+>>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
+config/samples = SubResource( 2 )
+
+
