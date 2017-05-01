@@ -15,11 +15,7 @@ var Y = 0.00
 
 var yurume_hiz = 0.1 #Player walk speed | Oyuncu Yürüme Hızı
 var kosma_hiz = 0.2 #Player run speed | Oyuncu Koşma Hızı
-<<<<<<< HEAD
 var ziplama_gucu = 5 #Player jump speed | Oyuncu Zıplama Hızı
-=======
-var ziplama_gucu = 4 #Player jump speed | Oyuncu Zıplama Hızı
->>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
 
 func _ready():
 	if ses_bicim == "Tahta":
@@ -46,10 +42,7 @@ func _ready():
 
 
 func _fixed_process(delta):
-<<<<<<< HEAD
 	get_node("Camera/silah/imlec").set_translation(Vector3(0,0,-7))
-=======
->>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
 	#Player movement | Oyuncu Hareketleri
 	if Input.is_key_pressed(KEY_W):
 		if Input.is_key_pressed(KEY_SHIFT):
@@ -70,11 +63,7 @@ func _fixed_process(delta):
 			set_linear_velocity(Vector3(0,ziplama_gucu,0))
 
 func _input(event):
-<<<<<<< HEAD
 	# Sound Effects Walk, Run | Ses Olayları Yürüme, Koşma
-=======
-	# Sound Effects Walk, Run and Jump | Ses Olayları Yürüme, Koşma ile Zıplama
->>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
 	if event.type == InputEvent.KEY:
 		if Input.is_key_pressed(KEY_W) and event.pressed and not event.is_echo():
 			ses_node.play(ses_sec_yuru)
@@ -86,7 +75,6 @@ func _input(event):
 			ses_node.play(ses_sec_yuru)
 		elif event.scancode == KEY_W and event.pressed == false:
 			ses_node.stop_all()
-<<<<<<< HEAD
 		if Input.is_key_pressed(KEY_S) and event.pressed and not event.is_echo():
 			ses_node.play(ses_sec_yuru)
 		elif event.scancode == KEY_S and event.pressed == false:
@@ -100,10 +88,6 @@ func _input(event):
 		elif event.scancode == KEY_D and event.pressed == false:
 			ses_node.stop_all()
 			
-			
-			
-=======
->>>>>>> fa61da19226d6bfb9973df35b28c49e345bb839d
 	#Camera motion | Kamera hareketleri
 	if event.type == InputEvent.MOUSE_MOTION:
 		X += event.relative_x*0.005
